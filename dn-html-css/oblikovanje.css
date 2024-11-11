@@ -19,12 +19,17 @@ izvorna koda dokumenta veljaven in urejen CSS.
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
     line-height: 1.5;
     max-width: 40em;
     margin: auto;
     text-align: justify;
 }
-
+img {
+    width: 100%;
+    height: auto;
+  }
+  
 .hec {
     margin: 0 auto;
     text-align: center;
@@ -41,6 +46,8 @@ blockquote {
     float: right;
     margin-right: 2em;
     padding: 1em;
+    background-color: rgba(51, 81, 126, 0.2);
+    border-left: 1px solid rgb(51, 81, 126);
 }
 blockquote p {
     font-style: italic;
@@ -57,8 +64,18 @@ h2 {
     color: rgb(225, 127, 74);
 }
 
+dl {
+    display: flex;
+    flex-wrap: wrap;
+}
 dl dt {
     font-weight: bold;
     float: left;
     margin-right: 1em;
+    width: 30%;
+}
+
+dl dd {
+    margin-left: 0;
+    width: 70%;
 }
